@@ -1,0 +1,70 @@
+/* Basic Reset / Reincio Basico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body Style / Estilo del cuerpo  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111827;
+    font-family: Arial, sans-serif;
+}
+/* Calculator Container / Contenedor de la calculadora */
+.calculator{
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+/*Display Inpu / Pantalla */
+#display{
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background: #e5e7eb;
+    color: rgb(192, 55, 55);
+
+}
+
+/* Buttons Container / Contenedor de botones */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+/*Button Style / Estilo de los botones */
+button{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius:10px;
+    background: #374151;
+    color: wheat;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+/* CLear button style / Estilo para boton de borrar */
+.btn-clear{
+    background-color: #374c51;
+}
+/* Functions buttons style / Estilo para botones de operacion */
+.functions{
+    background-color: #493502;
+}
+/* Hover effect / Efecto al pasar el mouse por encima */
+button:hover{
+    background-color: #596a83;
+}

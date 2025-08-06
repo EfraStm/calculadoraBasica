@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Calculator container / contenedor de la calculadora -->
+    <div class="calculator">
+        <h1>Cal v1</h1>
+        <!---Display / Pantalla-->
+        <input type="text" id="display" disabled>
+        <!--Buttons / Botones-->
+        <div class="buttons">
+            <!--Row 1 / Fila 1-->
+            <button class="btn-clear" onclick="clearDisplay()">C</button>
+            <button class="functions" onclick="appendValue('/')">/</button>
+            <button class="functions" onclick="appendValue('*')">*</button>
+            <button class="functions" onclick="deletelast()">⌫</button>
+            <!--Row 2 / Fila 2-->
+            <button class="numbers" onclick="appendValue('7')">7</button>
+            <button class="numbers" onclick="appendValue('8')">8</button>
+            <button class="numbers" onclick="appendValue('9')">9</button>
+            <button class="functions" onclick="appendValue('-')">-</button>
+            <!--Row 3 / Fila 3-->
+            <button class="numbers" onclick="appendValue('4')">4</button>
+            <button class="numbers" onclick="appendValue('5')">5</button>
+            <button class="numbers" onclick="appendValue('6')">6</button>
+            <button class="functions" onclick="appendValue('+')">+</button>
+            <!--Row 4 / Fila 4-->
+            <button class="numbers" onclick="appendValue('1')">1</button>
+            <button class="numbers" onclick="appendValue('2')">2</button>
+            <button class="numbers" onclick="appendValue('3')">3</button>
+            <button class="functions" onclick="calculate()">=</button>
+            <!--Row 5 / Fila 5-->
+            <button class="numbers" onclick="appendValue('0')">0</button>
+            <button class="numbers" onclick="appendValue('.')">.</button>
+            <button class="functions" onclick="appendValue('(')">(</button>
+            <button class="functions" onclick="appendValue(')')">)</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
